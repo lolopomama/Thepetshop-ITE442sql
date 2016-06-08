@@ -7,9 +7,9 @@ CREATE table if not exists PEOPLE(
     ID CHAR(9) NOT NULL,
     ADDRESS VARCHAR(40),
     SEX CHAR,
-    TEL_NUM INT,
+    TEL_NUM varchar(20),
     BDATE DATE,
-    EMAIL varchar(20),
+    EMAIL varchar(30),
     PRIMARY KEY(ID)
     
     );
