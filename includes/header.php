@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Admin: Hitachi Power Tools (Thailand) </title>
+		<title>ThePetShop (Thailand) </title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
 		<link rel="stylesheet" type="text/css" href="css/sticky-footer-navbar.css">
@@ -31,10 +31,12 @@
         <li class="dropdown active">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Manage Employee</a></li>
-            <li><a href="#">Manage Department</a></li>
-            <li><a href="#">Manage Project</a></li>
-            <li><a href="#">Manage Dependent</a></li>
+            <li><a href="#">Manage Customer</a></li>
+            <li><a href="#">Manage Pet</a></li>
+            <li><a href="#">Manage Staff</a></li>
+            <li><a href="#">Manage Order</a></li>
+            <li><a href="#">Manage Service</a></li>
+            <li><a href="#">Manage Product</a></li>
           </ul>
         </li>
         
