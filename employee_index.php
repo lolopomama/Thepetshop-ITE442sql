@@ -8,7 +8,7 @@
 <div class="container">
 	<div class="row">
 		<div class="page-header" style="margin: 0px;">
-		  <h1>Employee <small>Add / Remove the employee</small></h1>
+		  <h1>Order <small>Add / Remove the order</small></h1>
 		</div>
 	</div>
 	</br>
