@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/company-web/">COMPANY</a>
+      <a class="navbar-brand" href="/company-web/">The Pet Shop (Thailand)</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
