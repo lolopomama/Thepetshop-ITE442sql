@@ -6,17 +6,17 @@ CREATE table if not exists PEOPLE(
     LNAME varchar(30) not null,
     ID CHAR(9) NOT NULL,
     ADDRESS VARCHAR(40),
-	TEL_NUM varchar(20),
-	BDATE DATE,
+	TEL_NUM varchar(20) NOT NULL,
+	BDATE DATE NOT NULL,
     EMAIL varchar(30),
-    SEX CHAR,
+    SEX CHAR NOT NULL,
     PRIMARY KEY(ID)
     
     );
     
 create TABLE IF NOT exists CUSTOMER(
 	MEMBER_POINT INT,
-    CUSTOMER_ID CHAR(9),
+    CUSTOMER_ID CHAR(9) NOT NULL,
     foreign key (CUSTOMER_ID) references PEOPLE(ID)
     
     );
