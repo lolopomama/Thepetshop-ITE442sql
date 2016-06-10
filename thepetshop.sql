@@ -42,15 +42,15 @@ create TABLE IF NOT exists STAFF(
     );
     
 CREATE TABLE IF NOT exists ORDERS(
-	ORDER_ID CHAR(9),
-    CUS_ID CHAR(9),
-    STA_ID CHAR(9),
+	ORDER_ID CHAR(9) not null,
+    CUS_ID CHAR(9) not null,
+    STA_ID CHAR(9) not null,
     ODATE DATE,
     PAYMENT_METHOD varchar(10),
     TOTAL_PRICE DECIMAL(10,2),
     PRIMARY KEY(ORDER_ID),
-    foreign key (CUS_ID) references CUSTOMER(CUSTIOMER_ID),
-    FOREIGN KEY (STA_ID) REFERENCES STAFF(STAFF_ID)
+    foreign key(CUS_ID) references CUSTOMER(CUSTOMER_ID),
+    FOREIGN KEY(STA_ID) REFERENCES STAFF(STAFF_ID)
     );
     
 create TABLE IF NOT EXISTS SERVICE(
