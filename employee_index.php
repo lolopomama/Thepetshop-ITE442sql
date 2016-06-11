@@ -20,14 +20,13 @@
 			{
 				echo "<table class='table table-bordered'>";
 				echo "<tr>
-					<th>SSN</th>
-					<th>Name (TH)</th>
-					<th>Birth Date</th>
-					<th>Address</th>
-					<th>Sex</th>
-					<th>Salary</th>
-					<th>Manager</th>
-					<th>Department name</th>
+					<th>Order ID</th>
+					<th>CustomerID</th>
+					<th>Staff ID</th>
+					<th>Order Date</th>
+					<th>Payment Method</th>
+					<th>Total Price</th>
+					
 					
 					</tr>";
 				foreach ($employees as $result) {
