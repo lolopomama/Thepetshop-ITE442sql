@@ -34,8 +34,8 @@ create TABLE IF NOT exists STAFF(
 	STAFF_ID CHAR(9),
 	START_DATE DATE,
     SALARY DECIMAL(10,2),
-    DEGREE varchar(20),
-    POSIT varchar(10) NOT NULL,
+    DEGREE varchar(30),
+    POSIT varchar(30) NOT NULL,
     WORK_DURATION CHAR(100),
     foreign key (STAFF_ID) references PEOPLE(ID)
     
