@@ -20,9 +20,9 @@
 			{
 				echo "<table class='table table-bordered'>";
 				echo "<tr>
-					<th>Order ID</th>
-					<th>CustomerID</th>
-					<th>Staff ID</th>
+					<th>Order</th>
+					<th>Customer</th>
+					<th>Staff</th>
 					<th>Order Date</th>
 					<th>Payment Method</th>
 					<th>Total Price</th>
