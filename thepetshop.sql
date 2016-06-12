@@ -42,11 +42,11 @@ create TABLE IF NOT exists STAFF(
     );
     
 CREATE TABLE IF NOT exists ORDERS(
-	ORDER_ID CHAR(9) not null,
+	ORDER_ID CHAR(4) not null,
     CUS_ID CHAR(9) not null,
     STA_ID CHAR(9) not null,
     ODATE DATE,
-    PAYMENT_METHOD varchar(10),
+    PAYMENT_METHOD varchar(20),
     TOTAL_PRICE DECIMAL(10,2),
     PRIMARY KEY(ORDER_ID),
     foreign key(CUS_ID) references CUSTOMER(CUSTOMER_ID),
