@@ -12,8 +12,8 @@ insert into PEOPLE values('Sofee', 'Sofit', '213110152', 'Hungary', '0888888888'
 #======CUSTOMER ==#
 
 insert into PEOPLE VALUES('Dasiy', 'Moor', '201600101', 'New York, USA', '0811111111', '2012-01-22', 'dasiy@thepetshop.com', 'F');
-insert into PEOPLE VALUES('Chris', 'Bill', '201600202', 'Jarkata', '0822222222', '2012-01-22', 'dasiy@thepetshop.com', 'F');
-insert into PEOPLE VALUES('Ban', 'Nana', '201600303', 'Japan', '0833333333', '1900-06-19', 'banana@thepetshop.com', 'F');
+insert into PEOPLE VALUES('Chris', 'Bill', '201600202', 'Jarkata', '0822222222', '2012-01-22', 'dasiy@thepetshop.com', 'M');
+insert into PEOPLE VALUES('Ban', 'Nana', '201600303', 'Japan', '0833333333', '1900-06-19', 'banana@thepetshop.com', 'M');
 insert into PEOPLE VALUES('Apple', 'Pie', '201600404', 'Netherland', '0844444444', '2000-04-18', 'applepie@thepetshop.com', 'F');
 insert into PEOPLE VALUES('Honey', 'Bee', '201600505', 'Thailand', '0855555555', '1800-11-22', 'honeybee@thepetshop.com', 'F');
 
