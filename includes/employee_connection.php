@@ -11,7 +11,7 @@
 		}
 	};
 
-	class EmployeeConnection extends dbConn {
+	class OrderConnection extends dbConn {
 		public function updateEmployee($imageLink, $id) {
 			include 'includes/config.php';
 			try {
@@ -52,12 +52,12 @@
 			$success = ($err == '') ? 'true' : $error;
 			return $success;
 		}
-		public function getEmployees() {
+		public function getOrders() {
 			include 'includes/config.php';
 			try {
 				$db = new dbConn;
 				$err = '';
-				$stmt = $db->conn->prepare("SELECT * FROM employee");
+				$stmt = $db->conn->prepare("SELECT * FROM ORDERS");
 				$stmt->execute();
 
 				// Gets query result
