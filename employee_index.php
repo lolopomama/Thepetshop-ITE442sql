@@ -2,8 +2,8 @@
 <?php include ("includes/employee_connection.php"); ?>
 <?php 
 	// Get all Employee
-	$a = new EmployeeConnection;
-	$employees =  $a->getEmployees();
+	$a = new OrderConnection;
+	$employees =  $a->getOrders();
 ?>
 <div class="container">
 	<div class="row">
