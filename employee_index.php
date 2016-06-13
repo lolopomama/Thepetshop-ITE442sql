@@ -22,8 +22,8 @@
 				echo "<tr><th>Order</th><th>Customer</th><th>Staff</th><th>Order Date</th><th>Payment Method</th><th>Total Price</th></tr>";
 				foreach ($employees as $result) {
 				    
-                    echo "<tr typeid='".$result['ORDER_ID']."'><td><a href='employee_show.php?ssn=".$result['ORDER_ID']."'>".$result['SSN']."</a></td>";
-					//echo "<td>".$result['ORDER_ID']."</td>";
+                    //echo "<tr typeid='".$result['ORDER_ID']."'><td><a href='employee_show.php?ssn=".$result['ORDER_ID']."'>".$result['SSN']."</a></td>";
+					echo "<td>".$result['ORDER_ID']."</td>";
 					echo "<td>".$result['CUS_ID']."</td>";
 					echo "<td>".$result['STA_ID']."</d>";
 					echo "<td>".$result['ODATE']."</td>";
