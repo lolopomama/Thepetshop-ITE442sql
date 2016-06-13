@@ -5,7 +5,7 @@
 	$ssn = $_GET["ssn"];
 
 	$result = $a->getEmployee($ssn);
-	echo "Name: ".$result["FNAME"];
+	print_r($result);
 ?>
 
 <?php include ('includes/footer.php'); ?>

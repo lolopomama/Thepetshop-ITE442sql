@@ -11,7 +11,7 @@
 		}
 	};
 
-	class OrderConnection extends dbConn {
+	class EmployeeConnection extends dbConn {
 		public function updateEmployee($imageLink, $id) {
 			include 'includes/config.php';
 			try {
@@ -52,12 +52,12 @@
 			$success = ($err == '') ? 'true' : $error;
 			return $success;
 		}
-		public function getOrders() {
+		public function getEmployees() {
 			include 'includes/config.php';
 			try {
 				$db = new dbConn;
 				$err = '';
-				$stmt = $db->conn->prepare("SELECT * FROM ORDERS");
+				$stmt = $db->conn->prepare("SELECT * FROM employee");
 				$stmt->execute();
 
 				// Gets query result
@@ -89,30 +89,6 @@
 
 			return $success; 
 		}
-		
-		public function getDepartment($dno) {
-			include 'includes/config.php';
-			try {
-				$db = new dbConn;
-				$err = '';
-				$stmt = $db->conn->prepare("SELECT * FROM department where dnumber = :dnumber"  );
-				$stmt->bindParam(':dnumber', $dno);
-				$stmt->execute();
-
-				// Gets query result
-				$results = $stmt->fetch(PDO::FETCH_ASSOC);
-			}
-			catch (PDOException $e) {
-				$err = "Error: " . $e->getMessage();
-			}
-			$success = ($err == '' ? $results : $err );
-
-			return $success; 
-		}
-		
-		
-		
-		
 		public function createEmployee($imagePath, $imageUserPath, $imageLink) {
 			include 'includes/config.php';
 			try {
