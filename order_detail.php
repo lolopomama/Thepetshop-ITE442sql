@@ -1,10 +1,12 @@
 <?php include ('includes/header.php'); ?>
 <?php include ("includes/employee_connection.php"); ?>
 
+<body background="panda.jpg">
+
 <div class="container">
 	<div class="row">
 		<div class="page-header" style="margin: 0px;">
-		  <h1>Order Detail</h1>
+            <h1><b>Order Detail</b></h1>
 		</div>
 	</div>
 	</br>
@@ -24,6 +26,8 @@
     echo "Payment_Method: " . $result['PAYMENT_METHOD']. "<BR/><BR/>";
     echo "Totoal_Price: " . $result['TOTAL_PRICE']. "<BR/><BR/>";
     ?></center>
+
+</body>
 
 <?php include ('includes/footer.php'); ?>
 

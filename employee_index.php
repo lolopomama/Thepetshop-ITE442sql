@@ -5,10 +5,12 @@
 	$a = new OrderConnection;
 	$employees =  $a->getOrders();
 ?>
+
+<body background="bg.jpg">
 <div class="container">
 	<div class="row">
 		<div class="page-header" style="margin: 0px;">
-		  <h1>Order</h1>
+            <h1><b>Order</b></h1>
 		</div>
 	</div>
 	</br>
@@ -37,6 +39,6 @@
 		?>
 	</div>
 </div>
-
+</body>
 
 <?php include ('includes/footer.php'); ?>
