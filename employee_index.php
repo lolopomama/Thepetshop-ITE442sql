@@ -10,7 +10,7 @@
 <div class="container">
 	<div class="row">
 		<div class="page-header" style="margin: 0px;">
-            <h1><b>Order</b></h1>
+            <h1><b>Orders</b></h1>
 		</div>
 	</div>
 	</br>
@@ -21,7 +21,16 @@
 		if (is_array($employees) || is_object($employees))
 			{
 				echo "<table class='table table-bordered'>";
-				echo "<tr><th>Order</th><th>Customer</th><th>Staff</th><th>Order Date</th><th>Payment Method</th><th>Total Price</th></tr>";
+				echo 	"<tr>
+
+						<th>Order</th>
+						<th>Customer</th>
+						<th>Staff</th>
+						<th>Order Date</th>
+						<th>Payment Method</th>
+						<th>Total Price</th>
+
+						</tr>";
 				foreach ($employees as $result) {
 					echo "<td>"."<a href='order_detail.php?oid=".$result['ORDER_ID']."'>".$result['ORDER_ID']."</a>"."</td>";
 					echo "<td>".$result['CUS_ID']."</td>";
