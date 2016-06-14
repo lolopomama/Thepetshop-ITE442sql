@@ -19,7 +19,7 @@
 		if (is_array($employees) || is_object($employees))
 			{
 				echo "<table class='table table-bordered'>";
-				echo "<tr><th>SSN</th><th>Name (TH)</th><th>Birth Date</th><th>Manager</th></tr>";
+				echo "<tr><th>Order</th><th>Customer</th><th>Staff</th><th>Order Date</th><th>Payment Method</th><th>Total Price</th></tr>";
 				foreach ($employees as $result) {
 					echo "<tr typeid='".$result['ssn']."'><td>".$result['SSN']."</td>";
 					echo "<td>".$result['FNAME']."</td>";
