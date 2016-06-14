@@ -1,42 +1,18 @@
 <?php include ('includes/header.php'); ?>
 <?php include ("includes/employee_connection.php"); ?>
 <?php 
-	// Get all Employee
 	$a = new OrderConnection;
-	$employees =  $a->getOrders();
-?>
-<div class="container">
-	<div class="row">
-		<div class="page-header" style="margin: 0px;">
-		  <h1>Order Detail</h1>
-		</div>
-	</div>
-	</br>
-</div>
-<div class="container">
-	<div class="row">
-		<?php
-		if (is_array($employees) || is_object($employees))
-			{
-				echo "<table class='table table-bordered'>";
-				echo "<tr><th>Order</th><th>Service</th><th>Product</th><th>Quantity</th><th>Price</th></tr>";
-				foreach ($employees as $result) {
-					echo "<td>".$result['OID']."</a>"."</td>";
-					echo "<td>".$result['CUS_ID']."</td>";
-					echo "<td>".$result['STA_ID']."</td>";
-                    echo "<td>".$result['ODATE']."</td>";
-                    echo "<td>".$result['PAYMENT_METHOD']."</td>";
-                    echo "<td>".$result['TOTAL_PRICE']."</td>";
-					//echo "<td>"; 
-					//echo $a->getEmployee($result['SUPER_SSN'])["FNAME"];
-					//echo "</td>";
-					echo "</tr>";
-				}
-				echo "</table>";
-			}
-		?>
-	</div>
-</div>
+	$id = $_GET["oid"];
 
+	$result = $a->getOrder($id);
+	//print_r($result);
+    echo "ID: " . $result['ORDER_ID']. "<BR/>";
+    echo "Customer_id: " . $result['CUS_ID']. "<BR/>";
+    echo "Staff_id: ". $result['STA_ID']. "<BR/>";
+    echo "Order_date: " . $result['ODATE']. "<Br/>";
+    echo "Payment_Method: " . $result['PAYMENT_METHOD']. "<Br/>";
+    echo "Totoal_Price: " . $result['TOTAL_PRICE']. "<Br/>";
+?>
 
 <?php include ('includes/footer.php'); ?>
+

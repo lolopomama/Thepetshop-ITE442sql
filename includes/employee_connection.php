@@ -70,13 +70,13 @@
 
 			return $success; 
 		}
-		public function getOrder($ssn) {
+		public function getOrder($oid) {
 			include 'includes/config.php';
 			try {
 				$db = new dbConn;
 				$err = '';
-				$stmt = $db->conn->prepare("SELECT * FROM employee where SSN = :ssn"  );
-				$stmt->bindParam(':ssn', $ssn);
+				$stmt = $db->conn->prepare("SELECT * FROM ORDERS where ORDER_ID = :oid"  );
+				$stmt->bindParam(':oid', $oid);
 				$stmt->execute();
 
 				// Gets query result
