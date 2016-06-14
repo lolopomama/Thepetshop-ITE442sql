@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>ThePetShop (Thailand) </title>
+        <title>ThePetShop (Thailand)</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
 		<link rel="stylesheet" type="text/css" href="css/sticky-footer-navbar.css">
@@ -12,7 +12,7 @@
 		
 	</head>
 	<body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" >
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -22,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/company-web/">The Pet Shop</a>
+        <a class="navbar-brand" href="/company-web/"><b>The Pet Shop</b></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
