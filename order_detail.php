@@ -1,18 +1,29 @@
 <?php include ('includes/header.php'); ?>
 <?php include ("includes/employee_connection.php"); ?>
-<?php 
+
+<div class="container">
+	<div class="row">
+		<div class="page-header" style="margin: 0px;">
+		  <h1>Order Detail</h1>
+		</div>
+	</div>
+	</br>
+</div>
+
+<center><?php 
 	$a = new OrderConnection;
 	$id = $_GET["oid"];
 
+    
 	$result = $a->getOrder($id);
 	//print_r($result);
-    echo "ID: " . $result['ORDER_ID']. "<BR/>";
-    echo "Customer_id: " . $result['CUS_ID']. "<BR/>";
-    echo "Staff_id: ". $result['STA_ID']. "<BR/>";
-    echo "Order_date: " . $result['ODATE']. "<Br/>";
-    echo "Payment_Method: " . $result['PAYMENT_METHOD']. "<Br/>";
-    echo "Totoal_Price: " . $result['TOTAL_PRICE']. "<Br/>";
-?>
+    echo "ID: " . $result['ORDER_ID']. "<BR/><BR/>";
+    echo "Customer_id: " . $result['CUS_ID']. "<BR/><BR/>";
+    echo "Staff_id: ". $result['STA_ID']. "<BR/><BR/>";
+    echo "Order_date: " . $result['ODATE']. "<BR/><BR/>";
+    echo "Payment_Method: " . $result['PAYMENT_METHOD']. "<BR/><BR/>";
+    echo "Totoal_Price: " . $result['TOTAL_PRICE']. "<BR/><BR/>";
+    ?></center>
 
 <?php include ('includes/footer.php'); ?>
 
