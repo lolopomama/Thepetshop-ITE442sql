@@ -21,7 +21,7 @@
 				echo "<table class='table table-bordered'>";
 				echo "<tr><th>Order</th><th>Service</th><th>Product</th><th>Quantity</th><th>Price</th></tr>";
 				foreach ($employees as $result) {
-					echo "<td>".$result['ORDER_ID']."</a>"."</td>";
+					echo "<td>".$result['OID']."</a>"."</td>";
 					echo "<td>".$result['CUS_ID']."</td>";
 					echo "<td>".$result['STA_ID']."</td>";
                     echo "<td>".$result['ODATE']."</td>";

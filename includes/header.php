@@ -34,7 +34,7 @@
             <li><a href="#">Manage Customer</a></li>
             <li><a href="#">Manage Pet</a></li>
             <li><a href="#">Manage Staff</a></li>
-            <li><a href="#">Manage Order</a></li>
+            <li><a href="employee_index.php">Manage Order</a></li>
             <li><a href="#">Manage Service</a></li>
             <li><a href="#">Manage Product</a></li>
           </ul>
