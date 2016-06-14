@@ -8,7 +8,7 @@
 <div class="container">
 	<div class="row">
 		<div class="page-header" style="margin: 0px;">
-		  <h1>Order <small>Add / Remove the order</small></h1>
+		  <h1>Order</h1>
 		</div>
 	</div>
 	</br>
@@ -21,7 +21,7 @@
 				echo "<table class='table table-bordered'>";
 				echo "<tr><th>Order</th><th>Customer</th><th>Staff</th><th>Order Date</th><th>Payment Method</th><th>Total Price</th></tr>";
 				foreach ($employees as $result) {
-					echo "<td>"."<a href='#'>".$result['ORDER_ID']."</a>"."<td>";
+					echo "<td>"."<a href='order_detail.php'>".$result['ORDER_ID']."</a>"."</td>";
 					echo "<td>".$result['CUS_ID']."</td>";
 					echo "<td>".$result['STA_ID']."</td>";
                     echo "<td>".$result['ODATE']."</td>";
